@@ -1,0 +1,81 @@
+%Part 1: The edited code in the LP3031907113.m file was tested against the case of the canonical minimum problem A = [1,2,3;4,5,6], b = [5;13], c = [7;1;1]. Which was covered in lecture. The code correctly got the optimal solution for this which is x = (⅓)[1, 7, 0]’ with an optimal value of 14/3. 
+
+%Part 2: While my initial code ran into problems with the Cost of Subsistence problem, I solved it using a different matlab method. By setting A= [44.7, 1411, 2, 365, 0, 55.4, 33.3, 441, 0; 11.6, 418, 0.7, 54, 0, 3.2, 1.9, 68, 0; 11.8, 377, 14.4, 175, 0, 14.4, 8.8, 114, 0; 11.4, 252, 0.1, 56, 0, 13.5, 2.3, 68, 0; 36, 897, 1.7, 99, 30.9, 17.4, 7.9, 106, 0; 28.6, 680, 0.8, 80, 0, 10.6, 1.6, 110, 0; 21.2, 460, 0.6, 41, 0, 2, 4.8, 60, 0; 25.3, 907, 5.1, 341, 0, 37.1, 8.9, 64, 0; 15, 488, 2.5, 115, 0, 13.8, 8.5, 126, 0; 12.2, 484, 2.7, 125, 0, 13.9, 6.4, 160, 0; 12.4, 439, 1.1, 82, 0, 9.9, 3, 66, 0; 8, 130, 0.4, 31, 18.9, 2.8, 3, 17, 0; 12.5, 288, 0.5, 50, 0, 0, 0, 0, 0; 6.1, 310, 10.5, 18, 16.8, 4, 16, 7, 177; 8.4, 422, 15.1, 9, 26, 3, 23.5, 11, 60; 10.8, 9, 0.2, 3, 44.2, 0, 0.2, 2, 0; 20.6, 17, 0.6, 6, 55.8, 0.2, 0, 0, 0; 2.9, 238, 1, 52, 18.6, 2.8, 6.5, 1, 0; 7.4, 448, 16.4, 19, 28.1, 0.8, 10.3, 4, 0; 3.5, 49, 1.7, 3, 16.9, 0.6, 2.5, 0, 17; 15.7, 661, 1, 48, 0, 9.6, 8.1, 471, 0; 8.6, 18, 0.2, 8, 2.7, 0.4, 0.5, 0, 0; 20.1, 0, 0, 0, 0, 0, 0, 0, 0; 41.7, 0, 0, 0, 0.2, 0, 0.5, 5, 0; 2.9, 166, 0.1, 34, 0.2, 2.1, 2.9, 69, 0; 2.2, 214, 0.1, 32, 0.4, 2.5, 2.4, 87, 0; 3.4, 213, 0.1, 33, 0, 0, 2, 0, 0; 3.6, 309, 0.2, 46, 0.4, 1, 4, 120, 0; 8.5, 404, 0.2, 62, 0, 0.9, 0, 0, 0; 2.2, 333, 0.2, 139, 169.2, 6.4, 50.8, 316, 525; 3.1, 245, 0.1, 20, 0, 2.8, 3.9, 86, 0; 3.3, 140, 0.1, 15, 0, 1.7, 2.7, 54, 0; 3.5, 196, 0.2, 30, 0, 17.4, 2.7, 60, 0; 4.4, 249, 0.3, 37, 0, 18.2, 3.6, 79, 0; 10.4, 152, 0.2, 23, 0, 1.8, 1.8, 71, 0; 6.7, 212, 0.2, 31, 0, 9.9, 3.3, 50, 0; 18.8, 164, 0.1, 26, 0, 1.4, 1.8, 0, 0; 1.8, 184, 0.1, 30, 0.1, 0.9, 1.8, 68, 46; 1.7, 156, 0.1, 24, 0, 1.4, 2.4, 57, 0; 5.8, 705, 6.8, 45, 3.5, 1.0, 4.9, 209, 0; 5.8, 27, 0.5, 36, 7.3, 36, 2.7, 5, 544; 4.9, 60, 0.4, 30, 17.4, 2.5, 3.5, 28, 498; 1, 21, 0.5, 14, 0, 0.5, 0, 4, 952; 2.2, 40, 1.1, 18, 11.1, 3.6, 1.3, 10, 1998; 2.4, 138, 3.7, 80, 69, 4.3, 5.8, 37, 862; 2.6, 125, 4, 36, 7.2, 9, 4.5, 26, 5369; 2.7, 73, 2.8, 43, 188.5, 6.1, 4.3, 89, 608; 0.9, 51, 3, 23, 0.9, 1.4, 1.4, 9, 313; 0.4, 27, 1.1, 22, 112.4, 1.8, 3.4, 11, 449; 5.8, 166, 3.8, 59, 16.6, 4.7, 5.9, 21, 1184; 14.3, 336, 1.8, 118, 6.7, 29.4, 7.1, 198, 2522; 1.1, 106, 0, 138, 918.4, 5.7, 13.8, 33, 2755; 9.6, 138, 2.7, 54, 290.7, 8.4, 5.4, 83, 1912; 3.7, 20, 0.4, 10, 21.5, 0.5, 1, 31, 196; 3, 8, 0.3, 8, 0.8, 0.8, 0.8, 5, 81; 2.4, 16, 0.4, 8, 2, 2.8, 0.8, 7, 399; 0.4, 33, 0.3, 12, 16.3, 1.4, 2.1, 17, 272; 1, 54, 2, 65, 53.9, 1.6, 4.3, 32, 431; 7.5, 364, 4, 134, 3.5, 8.3, 7.7, 56, 0; 5.2, 136, 0.2, 16, 12, 1.6, 2.7, 42, 218; 2.3, 136, 0.6, 45, 34.9, 4.9, 2.5, 37, 370; 1.3, 63, 0.7, 38, 53.2, 3.4, 2.5, 36, 1253; 1.6, 71, 0.6, 43, 57.9, 3.5, 2.4, 67, 862; 8.5, 87, 1.7, 173, 86.8, 1.3, 4.3, 55, 57; 12.8, 99, 2.5, 154, 85.7, 3.9, 4.3, 65, 257; 13.5, 104, 2.5, 136, 4.5, 6.3, 1.4, 24, 136; 20, 1367, 4.2, 345, 2.9, 28.7, 18.4, 162, 0; 17.4, 1055, 3.7, 459, 5.1, 26.9, 38.2, 93, 0; 26.9, 1691, 11.4, 792, 0, 38.4, 24.6, 217, 0; 0, 0, 0, 0, 0, 4, 5.1, 50, 0; 0, 0, 0, 0, 0, 0, 2.3, 42, 0; 8.7, 237, 3, 72, 0, 2, 11.9, 40, 0; 8, 77, 1.3, 39, 0, 0.9, 3.4, 14, 0; 34.9, 0, 0, 0, 0, 0, 0, 0, 0; 14.7, 0, 0.5, 74, 0, 0, 0, 5, 0; 9, 0, 10.3, 244, 0 , 1.9, 7.5, 146, 0; 6.4, 11, 0.4, 7, 0.2, 0.2, 0.4, 3, 0]% 
+
+%A 9 by 77 matrix representing the 9 different nutrient levels of the 77 different foods
+
+%b = [3000; 70; 0.8; 12; 5000; 1.8; 2.7; 18; 75]
+
+%A 9 by 1 vector that represents the minimum nutrient levels that a healthy human should be consuming daily
+
+%c = [1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1]
+
+%The cost vector is a 77 by 1 vector representing the one dollar cost that is associated with the nutrient values of each food in matrix A
+
+%By using linprog(c, -A, -b, [], [], zeros(77,1)), we get the optimal solution of 72.4244 by consuming 66.9 grams of Enriched Wheat Flour (X1) and 5.443 grams of Spinach (X52). This seems wrong as spending $72 a day on food is extremely high and does not seem to be the optimal solution. Additionally, eating 67 grams of wheat flour does not seem like a great time.
+
+
+function[data, info] = LP3031907113(A, b, c)
+    % Edited Code for solving Canonical Minimum LPs with the simplex tableau%
+    [m,n] = size(A);
+    x = zeros(n, 1); %Will add in values when producing optimal x
+    B = randperm(n,m); %This will give a Basis B of m vectors, this effectively does PHASE I as it finds a basis of size m that is feasible (x > 0, Ax=b)
+    while min(A(:,B)\b) < 0 %this ensures it is a feasible solution
+            B =randperm(n,m);
+    end
+    T = A(:,B)\[b, eye(m)]; %this gives us M^-1(bI) which is equal to (t0, U), the top part of our tableau
+    y = T(:, 2:end)'*c(B); % this correlates with the equation y'= c(B)'*U, the equation is just transposed and put in terms of T which includes U  
+    T= [T; [c'*x, y']]; % this will set T equal to the full tableau with t0, U on the top and the optimal value which is a function of c and U followed by y' on the bottom
+    format short g; %formatting of decimals
+    disp('Starting Simplex Method...');
+    disp('Initial Basis is')%shows the starting point of the basis we are working with from Phase I:
+    disp(B)
+    obj = c(B,:)'*x(B,:); %having it be the basis indexed values of c dotted with the basis indexed values of x does not change it from c'*x as the non basis indexed values of x are 0
+    disp(['Initial objective = ', num2str(obj)]);
+    simplex = 1; %sets up the while loop
+    ITER = 0; %counts how many iterations the loop goes through before landing on an optimal basis
+    while simplex == 1 %initiating the simplex phase II loop
+        y = T(end, 2:end)'; %% defining y as it is in the revised simplex tableau
+        [zmin, s] = min(c-A'*y); % this gives the value zmin which is the minimum of c-A'*y and the index s
+        if (zmin >= 0) %if cj - A'yj >=0 for all j, the optimal solution has been reached
+            disp('Simplex Method has Converged'); 
+            simplex = 0;
+            disp('Dipslaying Optimal Basis');
+            disp(B');
+            x = zeros(n,1);
+            x(B) = T(1:end-1, 1);
+            obj = c(B,:)'*x(B);
+            disp(['optimal Objective = ', num2str(obj), ' after ', num2str(ITER), ' iterations']);
+            disp('Displaying Optimal solution x');
+            disp(x);
+            disp('Displaying dual Optimal solution y');
+            disp(y);
+            continue;
+            end %if not, the while loop continues
+        t = T(1:end-1, 2:end)*A(:,s); %this gives the value of ts which is then used to compute the row r to be replaced 
+        [flg, r] = Revisedgetr(n,s,B,T,t);
+        if(flg == 1) %check for degeneracy
+            disp('LP is degenerate');
+            simplex = 0;
+            continue;
+        end
+        if (r<1) %check for unsolvable through no lower bound
+            disp('LP has no lower bound');
+            simplex = 0;
+            continue;
+        end
+        x = zeros(n,1); % sets x to be a vector of zeros, to then add in the correct basis indexed values
+        x(B) = T(1:end -1, 1); %adds in the correct basis indexed values A(B)\b = x(b) 
+        ITER = ITER + 1; %counts that an iteration of the simplex loop has occurred
+        obj1 = c(B,:)'*x(B); %adjusts to the new optimal value
+        [T, B1, flg] = Revisedsimplextableau(B,r,s,t,zmin,T); %creates the new revised simplex tableau
+        if(flg == 1) %degeneracy check
+            disp('LP is degenerate');
+            simplex = 0;
+            continue;
+        end
+        B = B1; %rename new basis for next iteration of the loop
+        obj = obj1; %rename the objective function value for the next iteration of the loop
+    end
+    clear B1 f obj1 t zmin
+end
